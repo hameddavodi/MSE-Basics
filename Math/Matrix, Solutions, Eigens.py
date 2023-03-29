@@ -177,9 +177,8 @@ If the matrix is not invertible or the system of linear equations has no solutio
 
 # To find the eigenvectors and eigenvalues of a matrix using NumPy, you can use the numpy.linalg.eig function. Here's an example:
 
-import numpy as np
 
-# Create a matrix
+# Create a Matrix
 a = np.array([[1, 2], [3, 4]])
 
 # Find the eigenvalues and eigenvectors
