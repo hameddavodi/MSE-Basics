@@ -6,7 +6,7 @@ Welcome to this repository containing case studies in Statistics, Math, and Econ
 
 Here, you will find a collection of real-world examples and problems that illustrate the application of statistical, mathematical, and econometrics methods in solving practical issues.
 
-The case studies in this repository are organized into three categories: statistics, math, and econometrics. 
+The case studies in this repository are organized into three categories: Statistics, Math, and Econometrics. 
 
 Each category contains several case studies that cover a wide range of topics and methodologies.
 
