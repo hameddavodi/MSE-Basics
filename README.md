@@ -10,6 +10,6 @@ The case studies in this repository are organized into three categories: statist
 
 Each category contains several case studies that cover a wide range of topics and methodologies.
 
-We mainly going to use libraries like NUMPY since NumPy operations are faster and more compact than Python lists. 
+We mainly going to use libraries like Numpy since NumPy operations are faster and more compact than Python lists. 
 
 An array consumes less memory and is convenient to use. NumPy uses much less memory to store data and it provides a mechanism of specifying the data types.
