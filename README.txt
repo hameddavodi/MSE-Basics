@@ -1,6 +1,7 @@
-# Foundation
+**Foundation**
 
-## Theoritical Study cases: 
+**Theoritical Study cases:**
+
 Welcome to this repository containing case studies in statistics, math, and econometrics. 
 
 Here, you will find a collection of real-world examples and problems that illustrate the application of statistical, mathematical, and econometric methods in solving practical issues.
