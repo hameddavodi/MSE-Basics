@@ -1,2 +1,0 @@
-# Foundation
-Theoritical Study cases
