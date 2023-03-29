@@ -2,7 +2,7 @@
 
 **Theoritical Study cases:**
 
-Welcome to this repository containing case studies in statistics, math, and econometrics. 
+Welcome to this repository containing case studies in Statistics, Math, and Econometrics. 
 
 Here, you will find a collection of real-world examples and problems that illustrate the application of statistical, mathematical, and econometrics methods in solving practical issues.
 
