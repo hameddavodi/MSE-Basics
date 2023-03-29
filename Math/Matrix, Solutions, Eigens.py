@@ -5,6 +5,7 @@ Solutions in linear algebra refer to finding the values of the variables in a sy
 This is important in data science, where linear models are often used to represent and analyze data.
 Eigens are a way of describing the characteristics of a matrix, and they are often used in dimensionality reduction techniques such as principal component analysis.
 By finding the eigens of a matrix, we can identify the most important features of the data and reduce its complexity, making it easier to work with and analyze
+
 '''
 
 
