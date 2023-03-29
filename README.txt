@@ -6,3 +6,5 @@ Here, you will find a collection of real-world examples and problems that illust
 
 The case studies in this repository are organized into three categories: statistics, math, and econometrics. 
 Each category contains several case studies that cover a wide range of topics and methodologies.
+
+We mainly goint to use libraries like NUMPY since NumPy arrays are faster and more compact than Python lists. An array consumes less memory and is convenient to use. NumPy uses much less memory to store data and it provides a mechanism of specifying the data types.
