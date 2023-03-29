@@ -1,6 +1,6 @@
 # Foundation
 
-**Theoritical Study cases:**
+**Theoretical Study cases:**
 
 Welcome to this repository containing case studies in Statistics, Math, and Econometrics. 
 
