@@ -9,13 +9,11 @@ By finding the eigens of a matrix, we can identify the most important features o
 '''
 
 # To create a matrix using NumPy, you can use the numpy.array() function. Here's an example: 
-
-import numpy as np
 # If you got error of numpy try to install/reinstall it with: " ipython pip3 install numpy " / or just " pip3 install numpy"
+import numpy as np
 
 # Create a 2x3 matrix
 matrix = np.array([[1, 2, 3], [4, 5, 6]])
-
 # You can see that the format of the syntax is: np.(attribut) then followed by ( [  [],[], ..., []   ]  ). 
 # So there is a big bracket that contains small brackets indicating raws of a matrix.
 
@@ -26,9 +24,7 @@ print(matrix)
 [[1 2 3]
  [4 5 6]]
 
-#You can also create matrices of zeros or ones using the numpy.zeros() and numpy.ones() functions:
-
-# Create a 3x3 matrix of zeros
+#You can also create matrices of zeros or ones using the numpy.zeros() and numpy.ones() functions. Here's an example: 
 zeros_matrix = np.zeros((3, 3))
 print(zeros_matrix)
 
@@ -50,7 +46,6 @@ print(ones_matrix)
 # Matrix addition and subtraction: You can add or subtract two matrices of the same size by using the + and - operators, respectively. 
 # Here's an example:
 
-# Create two matrices
 a = np.array([[1, 2], [3, 4]])
 b = np.array([[5, 6], [7, 8]])
 
@@ -69,9 +64,9 @@ print(d)
 # Output
 [[-4 -4]
  [-4 -4]]
+
 # Matrix multiplication: You can multiply two matrices using the numpy.dot function.
 # Note that matrix multiplication is not the same as element-wise multiplication. Here's an example:
-
 c = np.dot(a, b)
 print(c)
 
@@ -119,7 +114,6 @@ print(b)
 # Inverse of a matrix: You can obtain the inverse of a matrix using the numpy.linalg.inv function. 
 # Note that not all matrices have an inverse. Here's an example:
 
-# Inverse of a matrix
 b = np.linalg.inv(a)
 print(b)
 
@@ -177,7 +171,6 @@ If the matrix is not invertible or the system of linear equations has no solutio
 
 # To find the eigenvectors and eigenvalues of a matrix using NumPy, you can use the numpy.linalg.eig function. Here's an example:
 
-
 # Create a Matrix
 a = np.array([[1, 2], [3, 4]])
 
@@ -191,7 +184,6 @@ print("Eigenvectors:")
 print(eigenvectors)
 
 # Output
-
 Eigenvalues:
 [-0.37228132  5.37228132]
 Eigenvectors:
@@ -210,34 +202,3 @@ Also, note that the numpy.linalg.eig function works only for square matrices.
 If the input matrix is not square or is singular, the function will raise a LinAlgError.
 
 '''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
