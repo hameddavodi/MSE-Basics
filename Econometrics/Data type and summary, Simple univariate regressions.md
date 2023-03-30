@@ -52,7 +52,7 @@ print(model.summary())
 ```
 The summary() method provides a comprehensive summary of the regression results, including the estimated coefficients, standard errors, t-statistics, p-values, R-squared value, and more.
 The output of the simple univariate regression would be like:
-
+```python
                             OLS Regression Results                            
 ==============================================================================
 Dep. Variable:                      y   R-squared:                       0.655
@@ -80,6 +80,7 @@ Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 [2] The condition number is large, 7.17. This might indicate that there are
 strong multicollinearity or other numerical problems.
+```
 
 
 
