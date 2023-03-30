@@ -1,7 +1,10 @@
 ## Linear Programming
 Suppose we want to maximize the objective function:
+
 Maximize `3x + 4y`
+
 And here is our constraints:
+
 `2x + y <= 20`
 `x + 2y <= 20`
 `x >= 0`
