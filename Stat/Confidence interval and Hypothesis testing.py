@@ -55,6 +55,7 @@ Sample mean: 4.967364229032898
 Sample standard deviation: 1.8406462382572457
   
 95% confidence interval for the mean: (4.602140082264826, 5.33258837580097)
+  
 '''
 we first generate some random data using the numpy.random.normal() function with mean 5, standard deviation 2, and size 100. 
 We then calculate the sample mean and standard deviation using the numpy.mean() and numpy.std() functions, respectively.
