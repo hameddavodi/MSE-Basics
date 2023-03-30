@@ -90,3 +90,46 @@ The output of scipy.linprog is a scipy.optimize.OptimizeResult object that conta
 '''
 The optimal solution is x=6.67 and y=6.67 with an objective function value of 33.33. The slack variables give the amount by which the constraints are relaxed at the optimal solution.
 '''
+
+'''
+Dynamic systems are systems that evolve over time, and they can be described by a set of differential equations. In Python, we can solve these equations and graph the results using the NumPy and Matplotlib libraries.
+'''
+# Suppose we want to solve the following system of differential equations:
+dx/dt = -2x + y
+dy/dt = -x - 2y
+
+# With initial conditions x(0) = 1 and y(0) = 0.
+
+# We can use the following code to solve this system in Python using NumPy:
+# Import numpy, scipy, and the famous matplotlib
+import numpy as np
+from scipy.integrate import solve_ivp
+import matplotlib.pyplot as plt
+
+# Define the system of differential equations
+def sys(t, z):
+    x, y = z
+    dxdt = -2*x + y
+    dydt = -x - 2*y
+    return [dxdt, dydt]
+# Here we used a simple custom function. Pay attation to the formation and syntax since we should use it in further Object-Oriented Programming sections.
+
+# Define the initial conditions
+z0 = [1, 0]
+
+# Set the time range to solve the system over
+t_span = [0, 5]
+
+# Solve the system of differential equations
+sol = solve_ivp(sys, t_span, z0)
+
+# Plot the solution
+plt.plot(sol.t, sol.y[0], label='x(t)')
+plt.plot(sol.t, sol.y[1], label='y(t)')
+plt.legend()
+plt.xlabel('Time')
+plt.ylabel('Values')
+plt.title('Solution to the System of Differential Equations')
+plt.show()
+
+# The output should be look like this: 
