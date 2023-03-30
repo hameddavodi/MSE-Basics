@@ -40,15 +40,28 @@ res = linprog(c=c, A_ub=A, b_ub=b, bounds=[x_bounds, y_bounds])
 
 '''
 Pay attantion to the syntax we used
-    c: an array of coefficients of the linear objective function to be maximized or minimized.
-    A_ub: a 2D array of coefficients of the inequality constraints (the "A" matrix in Ax <= b). The constraints are assumed to be in the form of A_ub @ x <= b_ub.
-    b_ub: a 1D array of the right-hand side values of the inequality constraints.
-    A_eq: a 2D array of coefficients of the equality constraints (the "A" matrix in Ax = b). The constraints are assumed to be in the form of A_eq @ x = b_eq.
-    b_eq: a 1D array of the right-hand side values of the equality constraints.
-    bounds: a sequence of tuples specifying the bounds of the variables. Each tuple is of the form (min, max) where min and max are optional lower and upper bounds. If a bound is not specified, it is assumed to be unbounded.
-    method: a string specifying the algorithm to use for solving the linear programming problem. The default value is 'simplex', which uses the simplex algorithm. Other options include 'highs' (for the HiGHS interior point method) and 'interior-point' (for the primal-dual interior point method).
-    callback: a callable function that is called once per iteration of the algorithm. It is passed a dictionary containing information about the current iteration, including the current solution vector and the current objective value.
-    options: a dictionary of solver-specific options. For example, 'maxiter' specifies the maximum number of iterations to perform.
+  c: an array of coefficients of the linear objective function to be maximized or minimized.
+  
+  A_ub: a 2D array of coefficients of the inequality constraints (the "A" matrix in Ax <= b). 
+    The constraints are assumed to be in the form of A_ub @ x <= b_ub.
+    
+  b_ub: a 1D array of the right-hand side values of the inequality constraints.
+  
+  A_eq: a 2D array of coefficients of the equality constraints (the "A" matrix in Ax = b). 
+    The constraints are assumed to be in the form of A_eq @ x = b_eq.
+    
+  b_eq: a 1D array of the right-hand side values of the equality constraints.
+  
+  bounds: a sequence of tuples specifying the bounds of the variables. 
+    Each tuple is of the form (min, max) where min and max are optional lower and upper bounds. If a bound is not specified, it is assumed to be unbounded.
+    
+  method: a string specifying the algorithm to use for solving the linear programming problem. 
+    The default value is 'simplex', which uses the simplex algorithm. Other options include 'highs' (for the HiGHS interior point method) and 'interior-point' (for the primal-dual interior point method).
+    
+  callback: a callable function that is called once per iteration of the algorithm. 
+    It is passed a dictionary containing information about the current iteration, including the current solution vector and the current objective value.
+    
+  options: a dictionary of solver-specific options. For example, 'maxiter' specifies the maximum number of iterations to perform.
 '''
 
 print(res)
