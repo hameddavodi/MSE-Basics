@@ -1,6 +1,6 @@
 ## Mathematics:
 
-###Introduction
+### Introduction
 
 In the field of mathematics, there are several concepts that are critical to understand when it comes to solving complex problems. Among these concepts are matrices, solutions, eigenvectors and eigenvalues, linear programming, and dynamic systems. In this README, we will briefly explain the importance of each of these concepts and provide an example of a real-world case study where they are implemented.
 Matrices
