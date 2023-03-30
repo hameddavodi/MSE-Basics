@@ -106,7 +106,8 @@ def sys(t, z):
     dxdt = -2*x + y
     dydt = -x - 2*y
     return [dxdt, dydt]
-# Here we used a simple custom function. Pay attation to the formation and syntax since we should use it in further Object-Oriented Programming sections.
+# Here we used a simple custom function. 
+Pay attation to the formation and syntax since we should use it in further Object-Oriented Programming sections.
 
 # Define the initial conditions
 z0 = [1, 0]
