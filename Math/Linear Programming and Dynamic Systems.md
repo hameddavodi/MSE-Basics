@@ -35,7 +35,8 @@ res = linprog(c=c, A_ub=A, b_ub=b, bounds=[x_bounds, y_bounds])
 print(res)
 ```
 
-Pay attantion to the syntax we used
+Pay attantion to the syntax we used:
+
   `c`: an array of coefficients of the linear objective function to be maximized or minimized.
   
   `A_ub`: a 2D array of coefficients of the inequality constraints (the "`A`" matrix in `Ax <= b`). 
