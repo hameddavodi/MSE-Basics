@@ -1,8 +1,3 @@
-'''
-Linear programming is a technique used to optimize a linear objective function subject to linear equality and inequality constraints.
-Numpy is a Python library that provides many mathematical functions and tools for working with arrays.
-One of the main features of numpy is the ability to solve linear systems of equations.
-'''
 #Suppose we want to maximize the objective function:
 
 Maximize 3x + 4y
