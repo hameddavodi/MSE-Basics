@@ -4,11 +4,11 @@ Suppose you have a cup of hot coffee, and you want to know how its temperature c
 
 We can model the temperature of the coffee as a function of time using the following differential equation:
 
-'''python
+```python
 
 dT/dt = -k*(T - Ta)
 
-'''
+```
 
 where T is the temperature of the coffee, Ta is the ambient temperature (in this case, we'll assume it's 20 degrees Celsius), and k is a constant that depends on the properties of the coffee cup. We'll assume that k = 0.1 for this example.
 
