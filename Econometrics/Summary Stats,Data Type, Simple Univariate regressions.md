@@ -1,9 +1,10 @@
 ## Dataset Types:
-    Cross-sectional data: A single snapshot of data collected at a specific point in time, where each observation represents a different individual or entity.
-    Time series data: Data collected over a period of time, often at regular intervals, where each observation represents a different point in time.
-    Panel data: A combination of cross-sectional and time series data, where multiple observations are collected for the same individuals or entities over time.
-    Longitudinal data: Similar to panel data, but with a focus on the same individuals or entities being observed and measured repeatedly over a longer period of time.
-    Pooled data: A combination of data from multiple sources or studies, often used for meta-analyses or to increase the sample size of a study.
+   - Cross-sectional data: A single snapshot of data collected at a specific point in time, where each observation represents a different individual or entity.
+   - Time series data: Data collected over a period of time, often at regular intervals, where each observation represents a different point in time.
+   - Panel data: A combination of cross-sectional and time series data, where multiple observations are collected for the same individuals or entities over time.
+   - Longitudinal data: Similar to panel data, but with a focus on the same individuals or entities being observed and measured repeatedly over a longer period of time.
+   - Pooled data: A combination of data from multiple sources or studies, often used for meta-analyses or to increase the sample size of a study.
+    
 To import data in Python with NumPy, you can use the loadtxt() function. Here's an example of how to use it:
 ```python
 import numpy as np
