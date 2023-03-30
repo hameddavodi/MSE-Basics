@@ -3,7 +3,7 @@ import numpy as np
 # generate a random variable with 100 samples
 x = np.random.normal(loc=10, scale=2, size=100)
 
-# calculate the expected value
+# calculate the expected value (It's simply the average, because of the definition)
 ev = np.mean(x)
 
 # calculate the variance
