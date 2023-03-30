@@ -1,15 +1,14 @@
-#Suppose we want to maximize the objective function:
-
+## Linear Programming
+Suppose we want to maximize the objective function:
 Maximize 3x + 4y
-
-# And here is our constraints:
+And here is our constraints:
 2x + y <= 20
 x + 2y <= 20
 x >= 0
 y >= 0
 
-# We can use the following code to solve this problem in Python using numpy:
-# Importing numpy library
+We can use the following code to solve this problem in Python using numpy:
+```python
 import numpy as np
 
 # Define the coefficients of the objective function
@@ -22,18 +21,17 @@ b = np.array([20, 20, 0, 0])
 # Set the bounds on the variables
 x_bounds = (0, None)
 y_bounds = (0, None)
+```
 
-'''
-Until this point we used what we have learned in the last section " Matrix, Solutions and Eigens".
-Here, we start to use another library called SCIPY. 
-'''
+Use the linprog function from scipy.optimize to solve the problem
+```python
 
-# Use the linprog function from scipy.optimize to solve the problem
 from scipy.optimize import linprog
 
 res = linprog(c=c, A_ub=A, b_ub=b, bounds=[x_bounds, y_bounds])
+print(res)
+```
 
-'''
 Pay attantion to the syntax we used
   c: an array of coefficients of the linear objective function to be maximized or minimized.
   
@@ -57,10 +55,8 @@ Pay attantion to the syntax we used
     It is passed a dictionary containing information about the current iteration, including the current solution vector and the current objective value.
     
   options: a dictionary of solver-specific options. For example, 'maxiter' specifies the maximum number of iterations to perform.
-'''
 
-print(res)
-
+```python
 # Output:
 fun: 33.33333333333333
 message: 'Optimization terminated successfully.'
@@ -69,8 +65,8 @@ slack: array([ 0.        ,  0.        , 13.33333333,  6.66666667])
 status: 0
 success: True
 x: array([6.66666667, 6.66666667])
+```
 
-'''
 The output of scipy.linprog is a scipy.optimize.OptimizeResult object that contains the following fields:
 
     x: the optimal solution to the linear programming problem.
@@ -80,23 +76,20 @@ The output of scipy.linprog is a scipy.optimize.OptimizeResult object that conta
     message: a string indicating the reason for the termination of the optimizer.
     nit: the number of iterations performed by the optimizer.
     slack: a 1D array containing the values of the slack variables at the optimal solution.
-'''
 
-'''
 The optimal solution is x=6.67 and y=6.67 with an objective function value of 33.33. The slack variables give the amount by which the constraints are relaxed at the optimal solution.
-'''
 
-'''
+## Dynamic Systems
 Dynamic systems are systems that evolve over time, and they can be described by a set of differential equations. In Python, we can solve these equations and graph the results using the NumPy and Matplotlib libraries.
-'''
-# Suppose we want to solve the following system of differential equations:
+
+Suppose we want to solve the following system of differential equations:
 dx/dt = -2x + y
 dy/dt = -x - 2y
 
-# With initial conditions x(0) = 1 and y(0) = 0.
+With initial conditions x(0) = 1 and y(0) = 0.
 
-# We can use the following code to solve this system in Python using NumPy:
-# Import numpy, scipy, and the famous matplotlib
+We can use the following code to solve this system in Python using NumPy:
+```python
 import numpy as np
 from scipy.integrate import solve_ivp
 import matplotlib.pyplot as plt
@@ -134,8 +127,9 @@ plt.xlabel('Time')
 plt.ylabel('Values')
 plt.title('Solution to the System of Differential Equations')
 plt.show()
-
-# The output should be look like this: 
+```
+The output should be look like this:
+```python 
 # Status
   message: The solver successfully reached the end of the integration interval.
   success: True
@@ -173,6 +167,6 @@ plt.show()
 
   # Graph:
   ...
-  
+```
 
 
