@@ -1,11 +1,11 @@
 ## Linear Programming
 Suppose we want to maximize the objective function:
-Maximize 3x + 4y
+Maximize `3x + 4y`
 And here is our constraints:
-2x + y <= 20
-x + 2y <= 20
-x >= 0
-y >= 0
+`2x + y <= 20`
+`x + 2y <= 20`
+`x >= 0`
+`y >= 0`
 
 We can use the following code to solve this problem in Python using numpy:
 ```python
@@ -23,7 +23,7 @@ x_bounds = (0, None)
 y_bounds = (0, None)
 ```
 
-Use the linprog function from scipy.optimize to solve the problem
+Use the linprog function from `scipy.optimize` to solve the problem
 ```python
 
 from scipy.optimize import linprog
@@ -33,28 +33,28 @@ print(res)
 ```
 
 Pay attantion to the syntax we used
-  c: an array of coefficients of the linear objective function to be maximized or minimized.
+  `c`: an array of coefficients of the linear objective function to be maximized or minimized.
   
-  A_ub: a 2D array of coefficients of the inequality constraints (the "A" matrix in Ax <= b). 
-    The constraints are assumed to be in the form of A_ub @ x <= b_ub.
+  `A_ub`: a 2D array of coefficients of the inequality constraints (the "`A`" matrix in `Ax <= b`). 
+    The constraints are assumed to be in the form of `A_ub @ x <= b_ub`.
     
-  b_ub: a 1D array of the right-hand side values of the inequality constraints.
+  `b_ub`: a 1D array of the right-hand side values of the inequality constraints.
   
-  A_eq: a 2D array of coefficients of the equality constraints (the "A" matrix in Ax = b). 
-    The constraints are assumed to be in the form of A_eq @ x = b_eq.
+  `A_eq`: a 2D array of coefficients of the equality constraints (the "`A`" matrix in `Ax = b`). 
+    The constraints are assumed to be in the form of `A_eq @ x = b_eq`.
     
-  b_eq: a 1D array of the right-hand side values of the equality constraints.
+  `b_eq`: a 1D array of the right-hand side values of the equality constraints.
   
-  bounds: a sequence of tuples specifying the bounds of the variables. 
-    Each tuple is of the form (min, max) where min and max are optional lower and upper bounds. If a bound is not specified, it is assumed to be unbounded.
+  `bounds`: a sequence of tuples specifying the bounds of the variables. 
+    Each tuple is of the form (`min, max`) where min and max are optional lower and upper bounds. If a bound is not specified, it is assumed to be unbounded.
     
-  method: a string specifying the algorithm to use for solving the linear programming problem. 
-    The default value is 'simplex', which uses the simplex algorithm. Other options include 'highs' (for the HiGHS interior point method) and 'interior-point' (for the primal-dual interior point method).
+  `method`: a string specifying the algorithm to use for solving the linear programming problem. 
+    The default value is '`simplex`', which uses the simplex algorithm. Other options include '`highs`' (for the HiGHS interior point method) and '`interior-point`' (for the primal-dual interior point method).
     
-  callback: a callable function that is called once per iteration of the algorithm. 
+  `callback`: a callable function that is called once per iteration of the algorithm. 
     It is passed a dictionary containing information about the current iteration, including the current solution vector and the current objective value.
     
-  options: a dictionary of solver-specific options. For example, 'maxiter' specifies the maximum number of iterations to perform.
+  `options`: a dictionary of solver-specific options. For example, '`maxiter`' specifies the maximum number of iterations to perform.
 
 ```python
 # Output:
@@ -67,8 +67,9 @@ success: True
 x: array([6.66666667, 6.66666667])
 ```
 
-The output of scipy.linprog is a scipy.optimize.OptimizeResult object that contains the following fields:
-
+The output of `scipy.linprog` is a `scipy.optimize.OptimizeResult` object that contains the following fields:
+```python
+'''
     x: the optimal solution to the linear programming problem.
     fun: the optimal value of the objective function.
     success: a boolean indicating whether the optimizer successfully found a solution.
@@ -76,17 +77,18 @@ The output of scipy.linprog is a scipy.optimize.OptimizeResult object that conta
     message: a string indicating the reason for the termination of the optimizer.
     nit: the number of iterations performed by the optimizer.
     slack: a 1D array containing the values of the slack variables at the optimal solution.
-
-The optimal solution is x=6.67 and y=6.67 with an objective function value of 33.33. The slack variables give the amount by which the constraints are relaxed at the optimal solution.
+```
+The optimal solution is `x=6.67` and `y=6.67` with an objective function value of `33.33`. The slack variables give the amount by which the constraints are relaxed at the optimal solution.
 
 ## Dynamic Systems
 Dynamic systems are systems that evolve over time, and they can be described by a set of differential equations. In Python, we can solve these equations and graph the results using the NumPy and Matplotlib libraries.
 
 Suppose we want to solve the following system of differential equations:
-dx/dt = -2x + y
-dy/dt = -x - 2y
 
-With initial conditions x(0) = 1 and y(0) = 0.
+`dx/dt = -2x + y`
+`dy/dt = -x - 2y`
+
+With initial conditions `x(0) = 1` and `y(0) = 0`.
 
 We can use the following code to solve this system in Python using NumPy:
 ```python
