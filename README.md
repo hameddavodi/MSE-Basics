@@ -1,4 +1,4 @@
-# Theoretical foundations:
+# Theoretical Foundations:
 
 This repository contains simple python examples that cover a wide range of topics and methodologies in Statistics, Math, and Econometrics. 
 
